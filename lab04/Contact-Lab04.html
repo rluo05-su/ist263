@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <p> Ryan Luo, 900 South Crouse Ave. Syracuse, NY 13244 </p>
+        <br>
+        <a href="mailto:rluo05@syr.edu"> Ryan Luo Email</a> <br>
+        <a href="https://www.linkedin.com/in/ryan-luo/"> My LinkedIn Profile 
+        <img src="../images/LI-Logo.png" alt= "LinkedIn Logo"> </a>
+         <br>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1939413996306!2d-76.13866858491791!3d43.03735077914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f4537cd79%3A0x968a90aa98400698!2s900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614275616223!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+         <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+          </form>
+          <form action = "mailto:rluo05@syr.edu" method="POST">
+            <label for="firstname"> Enter first name</label>
+            <!--for attribute tells browser which form lement this label links to-->
+            <!--must match value in id attribute-->
+            <input type="text" name="firstname" id="firstname">
+            </form>
+          <label for="year">Year in School</label>
+          <select name="year" id="year">
+              <option value="Fr">Freshman</option>
+              <option value="So">Sophomore</option>
+              <option value="Jr">Junior</option>
+              <option value="Sr">Senior</option>
+              <option value="Grd">Graduate School</option>
+              <option value="Pr">Professional</option>
+          </select><br>
+          
+          <label for="comments"> Enter your comments:</label>
+          <textarea name="comments" id="comments" rows="10" cols="100">
+              Tell us what you think!
+          </textarea>
+          <input type="submit" value="Send Comments"> 
+          
+    </body>
+
+</html>

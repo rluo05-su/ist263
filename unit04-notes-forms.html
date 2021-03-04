@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Unit 04 Notes - Forms</title>
+    </head>
+    <body>
+        <form action = "mailto:rluo05@syr.edu" method="POST">
+            <label for="firstname"> Enter first name</label>
+            <!--for attribute tells browser which form lement this label links to-->
+            <!--must match value in id attribute-->
+            <input type="text" name="firstname" id="firstname">
+
+            <label for="comments"> Enter your comments:</label>
+            <textarea name="comments" id="comments" rows="10" cols="100">
+                Tell us what you think!
+
+            <label for="salutation_mr">Mr.</label>  
+            <input type="radio" name="salutation" id="salutation_mr" value="Mr.">
+            <label for="salutation_mr">Ms.</label>  
+            <input type="radio" name="salutation" id="salutation_ms" value="Ms.">
+            <label for="salutation_dr">Dr.</label>  
+            <input type="radio" name="salutation" id="salutation_dr" value="Dr.">
+
+            <label for="veteran"> Are you a veteran?</label>
+            <input type="checkbox" name="veteran" id="veteran" value="Yes"><br>
+
+            <label for="year">Year in School</label>
+            <select name="year" id="year">
+                <option value="Fr">Freshman</option>
+                <option value="So">Sophomore</option>
+                <option value="Jr">Junior</option>
+                <option value="Sr">Senior</option>
+            </select><br>
+            <!--the value tag value is what gets sent when you submit form-->
+            <!--no other html tag inside select, option is the only thing tthat c an go there-->
+            </textarea> <br>
+            <input type="submit" value="Send Application">
+            
+            
+        </form>
+        
+    </body>
+</html>
