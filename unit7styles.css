@@ -24,8 +24,8 @@ p{
     border: 5px solid #000000;
  
 
-    /*to calculate width: width of box + padding x 2 + borer x 2 + margin x2 */
+    /*to calculate width: width of box + padding x 2 + border x 2 + margin x2 */
     /* for our box: 300 px + 40px + 10px +100px */
-    
+
     
 }
