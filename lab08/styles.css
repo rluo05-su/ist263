@@ -9,3 +9,6 @@ nav{padding: 10px}
 nav{margin-bottom:30px}
 .motto {float: right;}
 .ogimage {max-width: 100%;}
+.part1, .part2 {background-color: red; border-radius: 2em; margin: 30px;}
+.Address {float: left;}
+.part2 {display: flex;}
