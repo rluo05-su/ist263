@@ -12,3 +12,9 @@ nav{margin-bottom:30px}
 .part1, .part2 {background-color: red; border-radius: 2em; margin: 30px; flex-wrap: wrap}
 .Address {float: left;}
 .part2 {display: flex;}
+@media only screen and (max-width: 600px)
+ {
+    nav a {display: block; width: 100%;}
+    span {display: none;}
+ }
+ 
