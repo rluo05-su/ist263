@@ -1,8 +1,9 @@
 body{background-color:#ff830f}
 p{color: #086bff}
-p{font-size: 40px}
+p{font-size: 25px}
 a{color:#458B3E}
 h1,h2{color:#B9FAF6}
+h1,h2 {font-size: 40px}
 nav{background-color:#70D9D5}
 nav a{color: #c6fa0a}
 nav a:hover{background-color:#d1dbe4}
