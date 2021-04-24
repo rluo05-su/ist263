@@ -10,7 +10,7 @@
                 document.getElementById("messages").innerHTML = 'You Won!';
             }
             function TryAgain () {
-                document.getElementById("messages:").innerHTML = 'Wrong Shell - Try Again';
+                document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again';
             }
             function ShuffleShells() {
                 document.getElementById("first").style.order =Math.floor((Math.random() * 3) +2);
@@ -25,7 +25,7 @@
             #third {order: 3;}
         </style>
     </head>
-    <body onload="ShuffleShells();">   
+    <body onload="ShuffleShells();">           
         <h1>Choose a Walnut</h1>
     <div class="container">
         <img src="../lab11/Lab 11_files/walnut.jpg" id="first" alt="first walnut" onclick="WinnerMessage();">
