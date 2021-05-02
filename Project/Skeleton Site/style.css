@@ -1,5 +1,17 @@
 img {
-    justify-content: space-evenly;
-    padding:0%;
-    margin:0%;
+    text-align:center;
+    display:block;
+    margin:auto;
+    width:100%;
+    max-width: 45rem;
+    height:auto;
+}
+@media only screen and (max-width: 600px)
+ {
+    img {
+        width:100px
+    }
+ }
+* {
+    text-align: center;
 }
