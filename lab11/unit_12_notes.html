@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Unit 12 Notes  </title>
+        <script>
+            function correct() {
+                document.getElementbyId("rightanswer").innerHTML="True is correct!";
+                /* we located the element with right answer as the id value innerHTML allows us to change the content of the element */
+            }
+                function changeimage() {
+                    document.getElementById("rollover").setAttribute('src', 'https://laferger.github.io/ist263/images/arrow_over.PNG')
+                }
+            function changebgcolor () {
+                document.getElementByID ("pagecolor").style.backgroundColor = document.getElementById("cp").value;
+                
+             }
+        </script>
+    </head>
+    <body>
+        <p>
+            Javascript is the only programming language that runs in your web browser. </p>
+            <span id="rightanswer" onclick="correct();"> True </span> <br>
+            False<br>
+            <img src="https://laferger.github.io/ist263/images/arrow.PNG" id="rollover"
+            onmouseover="changeimage();" onmouseout="changeback();">    
+            <form>
+                <input type="color" id="cp">
+            </form>
+        </p>
+    </body>
+</html>
