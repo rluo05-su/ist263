@@ -28,7 +28,10 @@
         }
     </style>
     <script>
-      
+      function MercurySlide () {
+          document.getElementById("mercury");
+          document.getElementById("mercuryinfo")
+      }
     </script>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
@@ -79,14 +82,14 @@
         </div>
     </div>
     <div id="thumbnails">
-        <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercurythumb">
-        <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venusthumb">
-        <img src="./Lab 12 Slideshow_files/earth.jpg" alt="earth" id="earththumb">
-        <img src="./Lab 12 Slideshow_files/mars.jpg" alt="mars" id="marsthumb">
-        <img src="./Lab 12 Slideshow_files/jupiter.jpg" alt="jupiter" id="jupiterthumb">
-        <img src="./Lab 12 Slideshow_files/saturn.jpg" alt="saturn" id="saturnthumb">
-        <img src="./Lab 12 Slideshow_files/uranus.jpg" alt="uranus" id="uranusthumb">
-        <img src="./Lab 12 Slideshow_files/neptune.jpg" alt="neptune" id="neptunethumb">
+        <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercurythumb" onclick="MercurySlide();">
+        <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venusthumb" onclick="VenusSlide();">
+        <img src="./Lab 12 Slideshow_files/earth.jpg" alt="earth" id="earththumb" onclick="EarthSlide();">
+        <img src="./Lab 12 Slideshow_files/mars.jpg" alt="mars" id="marsthumb" onclick="MarsSlide();">
+        <img src="./Lab 12 Slideshow_files/jupiter.jpg" alt="jupiter" id="jupiterthumb" onclick="JupiterSlide();">
+        <img src="./Lab 12 Slideshow_files/saturn.jpg" alt="saturn" id="saturnthumb" onclick="SaturnSlide();">
+        <img src="./Lab 12 Slideshow_files/uranus.jpg" alt="uranus" id="uranusthumb" onclick="UranusSlide();">
+        <img src="./Lab 12 Slideshow_files/neptune.jpg" alt="neptune" id="neptunethumb" onclick="NeptuneSlide();">
     </div>
 
 </div>
