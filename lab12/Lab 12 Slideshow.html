@@ -19,11 +19,11 @@
         #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
         /* ^^ margin auto is centering this container */
         #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {width: 100px;}
-        #slideshow-container {
+        .planetinfo {
             display: none;
         }
         #mercuryinfo, #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo
-        #planetinfo {
+        .slideshow-container {
             display: none;
             
         }
@@ -81,7 +81,7 @@
     </script>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
-<div id="slideshow-container">
+<div id="slideshow-container" class="slideshow-container">
     <div id="bigimages">
         <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercury" onclick="PlanetsOff(); MercuryOn();">
         <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venus" onclick="PlanetsOff(); VenusOn();">
@@ -92,7 +92,7 @@
         <img src="./Lab 12 Slideshow_files/uranus.jpg" alt="uranus" id="uranus" onclick="PlanetsOff(); UranusOn();">
         <img src="./Lab 12 Slideshow_files/neptune.jpg" alt="neptune" id="neptune" onclick="PlanetsOff(); NeptuneOn();">
     </div>
-    <div id="planetinfo">        
+    <div id="planetinfo" class="planetinfo">        
         <h1>Planets Slideshow</h1>
         <div id="mercuryinfo">
             <h2>Mercury</h2>
