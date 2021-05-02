@@ -18,36 +18,78 @@
         #planetinfo {padding: 100px;}
         #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
         /* ^^ margin auto is centering this container */
-        #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {width: 100px;}
+        /*#mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {width: 100px;}
         .planetOff {
             display: none;
         }
         #mercuryinfo, #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo
         .planetOff {
             display: none;
+            */
         }
     </style>
     <script>
-      function MercurySlide() {
-          document.getElementById("mercury").style.display='none';
-      }
-      function VenusSlide() {
-          document.getElementById("venus").style.display=".planetOff";
-          document.getElementById("venusinfo").style.display=".planetOff"
-      }
+        function PlanetsOff() {
+            document.getElementById('mercury'.style.display ='none')
+            document.getElementById('venus'.style.display ='none')
+            document.getElementById('earth'.style.display ='none')
+            document.getElementById('mars'.style.display ='none')
+            document.getElementById('jupiter'.style.display ='none')
+            document.getElementById('saturn'.style.display ='none')
+            document.getElementById('uranus'.style.display ='none')
+            document.getElementById('neptune'.style.display ='none')
+            document.getElementById('mercuryinfo'.style.display ='none')
+            document.getElementById('venusinfo'.style.display ='none')
+            document.getElementById('earthinfo'.style.display='none')
+            document.getElementById('marsinfo'.style.display ='none')
+            document.getElementById('jupiterinfo'.style.display ='none')
+            document.getElementById('saturninfo'.style.display ='none')
+            document.getElementById('uranusinfo'.style.display ='none')
+        }
+        function MercuryOn() {
+            document.getElementById('mercury'.style.display ='block')
+            document.getElementById('mercuryinfo'.style.display ='none')
+        }  
+        function VenusOn() {
+            document.getElementById('venus'.style.display ='block')
+            document.getElementById('venusinfo'.style.display ='block')
+        }
+        function EarthOn() {
+            document.getElementById('earth'.style.display ='block')
+            document.getElementById('earthinfo'.style.display ='block')
+        }
+        function MarsOn() {
+            document.getElementById('mars'.style.display ='block')
+            document.getElementById('marsinfo'.style.display ='block')
+        } 
+        function JupiterOn() {
+            document.getElementById('jupiter'.style.display ='block')
+            document.getElementById('jupiterinfo'.style.display ='block')
+        }
+        function SaturnOn() {
+            document.getElementById('saturn'.style.display ='block')
+            document.getElementById('saturninfo'.style.display ='block')
+        } 
+        function UranusOn() {
+            document.getElementById('uranus'.style.display ='block')
+            document.getElementById('uranusinfo'.style.display ='block')
+        }
+        function NeptuneOn() {
+            document.getElementById('neptune'.style.display ='block')
+            document.getElementById('neptuneinfo'.style.display ='block')
     </script>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
 <div id="slideshow-container">
     <div id="bigimages">
-        <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercury" class="planetOn">
-        <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venus" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/earth.jpg" alt="earth" id="earth" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/mars.jpg" alt="mars" id="mars" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/jupiter.jpg" alt="jupiter" id="jupiter" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/saturn.jpg" alt="saturn" id="saturn" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/uranus.jpg" alt="uranus" id="uranus" class="planetOff">
-        <img src="./Lab 12 Slideshow_files/neptune.jpg" alt="neptune" id="neptune" class="planetOff">
+        <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercury" onclick="PlanetsOff(); MercuryOn();">
+        <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venus" onclick="PlanetsOff(); VenusOn();">
+        <img src="./Lab 12 Slideshow_files/earth.jpg" alt="earth" id="earth" onclick="PlanetsOff(); EarthOn();">
+        <img src="./Lab 12 Slideshow_files/mars.jpg" alt="mars" id="mars" onclick="PlanetsOff(); MarsOn();">
+        <img src="./Lab 12 Slideshow_files/jupiter.jpg" alt="jupiter" id="jupiter" onclick="PlanetsOff(); JupiterOn();">
+        <img src="./Lab 12 Slideshow_files/saturn.jpg" alt="saturn" id="saturn" onclick="PlanetsOff(); SaturnOn();">
+        <img src="./Lab 12 Slideshow_files/uranus.jpg" alt="uranus" id="uranus" onclick="PlanetsOff(); UranusOn();">
+        <img src="./Lab 12 Slideshow_files/neptune.jpg" alt="neptune" id="neptune" onclick="PlanetsOff(); NeptuneOn();">
     </div>
     <div id="planetinfo">        
         <h1>Planets Slideshow</h1>
