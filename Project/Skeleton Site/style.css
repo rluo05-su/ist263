@@ -11,10 +11,16 @@ img {
     max-width: 100%;
     height:auto;
 }
-@media only screen and (max-width: 600px)
+.books {
+    max-width: 100%;
+}
+@media only screen and (max-width: 300px)
  {
     img {
-        width:100px
+        max-width:100%
+    }
+    .books {
+        max-width: 100%;
     }
  }
 * {
@@ -27,7 +33,7 @@ img {
     margin: 0px; 
     flex-wrap: wrap}
 
-.englishtutoring {
+.englishtutoring { 
     font-size: 50px
 }
 .part2 {display: flex;}
