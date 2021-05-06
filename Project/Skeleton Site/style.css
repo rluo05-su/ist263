@@ -33,7 +33,8 @@ img {
 .englishtutoring { 
     font-size: 50px
 }
-.part2 {display: flex;}
+.part2 {display: flex;
+flex-wrap:wrap }
 .part2 p {padding: 30px;}
 .p1, .p2, .p3 {
     margin: 30px;
