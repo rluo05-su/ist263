@@ -14,7 +14,7 @@ img {
 .books {
     max-width: 100%;
 }
-@media only screen and (max-width: 300px)
+@media only screen and (max-width: 600px)
  {
     img {
         max-width:100%
@@ -51,8 +51,6 @@ img {
     text-align:center;
     display:block;
     margin:12px;
-    width:200%;
-    max-width: 115rem;
     height:50%;
     max-height: 45rem;
 }
