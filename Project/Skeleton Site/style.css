@@ -50,3 +50,7 @@ flex-wrap:wrap }
     display:block;
     margin:12px;
 }
+
+.h1, .h2, nav, p {
+    font-family: 'Montserrat', sans-serif;
+}
